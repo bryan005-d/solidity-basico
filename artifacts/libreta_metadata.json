@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "guardarNombre",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "leernombre",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"libreta.sol": "libreta"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"libreta.sol": {
+			"keccak256": "0x6d5fe5e490653cfd637b552362ed3575ed2676f75ead62bfcb2cfc57e7d8afde",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9c46e8be1c53724102c9e1e5af7869cdd96110681ee7ef5f6d5af0b6a93dd7d2",
+				"dweb:/ipfs/QmRe96hmw5jbiN2K6ANAdFFBxvPbz3EnE2kdKnUzDNvuUR"
+			]
+		}
+	},
+	"version": 1
+}

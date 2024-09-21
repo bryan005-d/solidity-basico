@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "aprendiendo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "hola_mundo",
+						"type": "string"
+					}
+				],
+				"name": "llamado",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "saludo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"aprendiendo.sol": "prendiendo"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"aprendiendo.sol": {
+			"keccak256": "0x9d7482690c5c7c3b35e0f22d2d01df554e67aecb004a39b17f778182562c5862",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://466c91358166b9d4ffd344f0c8f1f803b2b302171a4ef05ce5b0d0d7f09d2b97",
+				"dweb:/ipfs/QmTqrj6y3bbGWS8mLeJGXhurCnPoHeHSs4Jg44FvcjMHdg"
+			]
+		}
+	},
+	"version": 1
+}
