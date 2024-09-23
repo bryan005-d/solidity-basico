@@ -2,7 +2,7 @@
 
 //portero de un bar
 
-pragma solidity >0.8.24;
+pragma solidity 0.8.24;
 
 contract bucles {
     uint256 public numero;
