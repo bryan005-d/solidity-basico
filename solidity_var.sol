@@ -18,7 +18,7 @@ contract solidity_var {
         bloc_num = block.number;
         time_stamp = block.timestamp;
         gas_left = gasleft();
-        sender = msg.sender;
+        sender = msg.sender;//aquel que inicia el contrato
         sig_ID = msg.sig;
         gas_limit = block.gaslimit;
     }

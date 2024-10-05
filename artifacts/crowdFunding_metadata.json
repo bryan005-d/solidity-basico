@@ -9,11 +9,44 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_targetAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_deadline",
 						"type": "uint256"
 					}
 				],
-				"name": "arr",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "createRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deadline",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,50 +60,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
-				"name": "arr2",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "arr3",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
-					}
-				],
-				"name": "get",
+				"name": "fundContributors",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -83,20 +78,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getarr",
-				"outputs": [
-					{
-						"internalType": "uint256[]",
-						"name": "",
-						"type": "uint256[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getlength",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -108,8 +90,60 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_requestNum",
+						"type": "uint256"
+					}
+				],
+				"name": "makePayament",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "pop",
+				"name": "manager",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numRequets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reaisedAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "refund",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -118,26 +152,54 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_i",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "push",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "requests",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "sendFunds",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "targetAmount",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_index",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "remove",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -154,7 +216,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"array.sol": "array"
+			"contrato.sol": "crowdFunding"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -168,12 +230,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"array.sol": {
-			"keccak256": "0xc365b3b982839e27a46b52898141e1e5493b49041d90bb83cad9c2406ba62337",
+		"contrato.sol": {
+			"keccak256": "0x7efc864faef9f4856e241f29621d68e299168f4be7402f711b3d82a515e6c672",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9c9de6aa10698032102b98a1cb168d4b305dd21ccae287e1126e9d382f4be743",
-				"dweb:/ipfs/Qmc5omYswqcJrj1wpKTMjXNbFsDUKMqMWfV9DwM72nJ7HP"
+				"bzz-raw://200318bbf3a291f1a2b4adde6f0b0fb7652554e7c621bdef2d7e7ad519891e5f",
+				"dweb:/ipfs/QmSAFyKVhrY2Bp4e461zQtLUtAUX1wnXALyJci5BELgCxg"
 			]
 		}
 	},

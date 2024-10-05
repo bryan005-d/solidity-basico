@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.24;
+pragma solidity >0.8.24;
 
 contract array {
     //dos formas de inicializar un array vector = [11,22,33,44],vector[2] == print(33)
